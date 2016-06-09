@@ -11,6 +11,14 @@
 <body>
 	<h3>HTML template for 65816 ASM</h3>
 	<h4>This HTML, as-is, will also successfully compile in WLA-DX</h4>
+<p>
+  ; philosophy going forward, try to keep the control ops outside the macro and thus visible from source,<br>
+  ; unless the routine has a complicated branched endings such as sec/clc branches.<br>
+  ; if rtls are included, comment so wherever the macro is called<br>
+  ; to avoid editing out tags, make the macro lists at beginning of source into a table, as follows<br>
+  ; but for main sections of src which i’ve decided to give fields of ample length, html tags just won’t do, appearance too cluttered.
+</p>
+  
 ; <table> <tr> <td>
 
 .MACRO NameOfRoutine	; </td> <td></td> </tr> 	<tr> <td>
