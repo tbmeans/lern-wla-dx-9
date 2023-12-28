@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<title>65816 asm</title>
+	<style>
+		body {
+			font-family: Consolas;
+		}
+	</style>
+</head>
+<body>
+	<h3>HTML template for 65816 ASM</h3>
+	<h4>This HTML, as-is, will also successfully compile in WLA-DX</h4>
+; <table> <tr> <td>
+
+.MACRO NameOfRoutine	; </td> <td></td> </tr> 	<tr> <td>
+.IF \@ == 0		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #CONST1		; </td> <td>COMMENT</td> </tr> 	<tr> <td>
+.ELSE		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  ldx #CONST2		; </td> <td>COMMENT</td> </tr> <tr> <td> &nbsp &nbsp
+  lda #ABS1		; </td> <td>COMMENT</td> </tr> <tr> <td>
+.ENDIF		; </td> <td></td> </tr> 	<tr> <td>
+LoopEq\@: 	; </td> <td>COMMENT</td> </tr> <tr> <td> &nbsp &nbsp
+  sta LONG1,x 	; </td> <td>COMMENT</td> </tr>  <tr> <td> &nbsp &nbsp
+  dex			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  dex			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  bpl LoopEq\@	; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  ldx ABS2		; </td> <td></td> </tr> 	<tr> <td>
+.IF \@ == 0		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #CONST3		; </td> <td>COMMENT</td> </tr> 	<tr> <td> 
+.ELSE		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #CONST4		; </td> <td>COMMENT</td> </tr> 	<tr> <td>
+.ENDIF		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  sta ZP1,x		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #CONST5		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  sta ZP2,x		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #CONST6		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  sta ZP3,x		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+.IF \@ == 0		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #ABS2		; </td> <td>COMMENT</td> </tr>	<tr> <td>
+.ELSE		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  lda #ABS3		; </td> <td>COMMENT</td> </tr> 	<tr> <td>
+.ENDIF		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  sta ZP4,x		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  txa			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  clc			; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  adc #CONST7		; </td> <td></td> </tr> 	<tr> <td> &nbsp &nbsp
+  sta ADDR1		; </td> <td><a href=#>Link to file explaining data stored</a></td> </tr> 	<tr> <td> &nbsp &nbsp	
+			; </td> <td></td> </tr> 	<tr> <td>
+.ENDM		; </td> <td></td> </tr> 	<tr> <td>
+			; </td> <td></td> </tr> 	<tr> <td>
+			; </td> <td></td> </tr> 	<tr> <td>
+
+;</table>
+
+</body>
+</html>
